@@ -1,0 +1,107 @@
+body {
+    margin: 0;
+    font-family: sans-serif;
+}
+* {
+    box-sizing: border-box;
+}
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    padding: 10px;
+    color: rgba(255,255,255, 0.9);
+    border-bottom: 1px solid rgba(128,0,128, 0.25);
+    background-color: rgba(64,0,128, 0.75);
+}
+
+.Basket {
+    position: relative;
+    margin-left: auto;
+}
+.Basket__button {
+    border: 1px solid rgba(255,255,255, 0.8);
+    background-color: rgba(255,255,255, 0.25);
+    color: rgba(255,255,255, 0.9);
+    padding: 5px 10px;
+}
+.Basket__popup {
+    position: absolute;
+    right: -10px;
+    top: calc(100% + 10px);
+    height: 300px;
+    width: 400px;
+    padding: 5px;
+    overflow: auto;
+
+    background-color: rgba(48,0,48, 0.9);
+}
+.Basket__productList {
+    padding: 0;
+    margin: 0;
+    list-style-type: none;
+}
+.Basket__item {
+    padding: 4px;
+    margin-bottom: 5px;
+    background-color: rgba(255,255,255, 0.15);
+}
+
+.ProductsList {
+    display: flex;
+    flex-wrap: wrap;
+    padding: 5px;
+}
+.ProductItem {
+    display: flex;
+    flex-direction: column;
+    width: calc(25% - 10px);
+    min-height: 240px;
+
+    margin: 5px;
+    padding: 5px;
+
+    border: 1px solid rgba(0,0,0, 0.15);
+    background-color: rgba(0,0,0, 0.05);
+}
+.ProductItem__body {
+    font-size: 0.9em;
+    color: rgba(0,0,0, 0.7);
+}
+.ProductItem__topbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: -5px -5px 5px -5px;
+    padding: 5px;
+    border-bottom: 1px solid rgba(0,0,0, 0.15);
+}
+.ProductItem__title {
+    font-weight: bold;
+}
+.ProductItem__article {
+    font-size: 0.85em;
+    margin-left: auto;
+    color: rgba(0,0,0, 0.75);
+}
+.ProductItem__toolbar {
+    display: flex;
+    margin: auto -5px -5px -5px;
+    padding: 1px;
+    border-top: 1px solid rgba(0,0,0, 0.15);
+}
+.ProductItem__toolButton {
+    margin: 1px;
+    border: 1px solid rgba(0,0,0, 0.15);
+    background-color: rgba(0,0,0, 0.05);
+}
+.ProductItem__toolButton:hover,
+.ProductItem__toolButton:focus {
+    background-color: rgba(0,0,0, 0.1);
+}
+.ProductItem__label {
+    margin-right: auto;
+    vertical-align: middle;
+    padding: 2px;
+}
